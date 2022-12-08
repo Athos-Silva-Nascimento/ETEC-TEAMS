@@ -1,0 +1,22 @@
+mysql> CREATE DATABASE banco_funcionarios;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE banco_funcionarios;
+Database changed
+
+mysql> CREATE TABLE tabela_funcionarios(
+    -> id INT AUTO_INCREMENT,
+    -> nome VARCHAR(45),
+    -> salario FLOAT,
+    -> PRIMARY KEY (id));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> SELECT * FROM tabela_funcionarios;
++----+------+---------+
+| id | nome | salario |
++----+------+---------+
+|  1 | João |    1800 |
++----+------+---------+
+1 row in set (0.00 sec)
+
+mysql>
